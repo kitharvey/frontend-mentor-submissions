@@ -1,0 +1,110 @@
+.details{
+    width: 100%;
+    padding: 0 20px;
+
+    .details-wrapper{
+        width: 100%;
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        .navigation{
+            margin: 50px 0;
+            .back-wrapper{
+                padding: 10px 20px;
+                background-color: var(--elements);
+                box-shadow: var(--shadow);
+                border-radius: 6px;
+                width: max-content;
+                cursor: pointer;
+                svg{
+                    transition: transform .15s ease-in-out;
+                }
+
+                &:hover{
+                    svg{
+                        transform: translateX(-10px);
+                    }
+                }
+                span{
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .details-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+
+            img{
+                width: 500px;
+            }
+
+            .left{
+                margin: 20px 0;
+                width: 500px;
+                margin-left: 20px;
+                p{
+                    font-weight: 600;
+                    line-height: 1.2;
+                    margin: 10px 0;
+                    span{
+                        font-weight: 300;
+                    }
+                }
+                
+                .more-details{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-top: 20px;
+                    margin-bottom: 40px;
+
+                    .right-details, .left-details{
+                        margin: 10px 0;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        flex-direction: column;
+                    }
+                   
+                }
+
+                .borders{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    .borders-name{
+                        width: max-content;
+                        padding: 5px 10px;
+                        background-color: var(--elements);
+                        box-shadow: var(--);
+                    }
+
+                    p, .borders-name{
+                        margin: 5px 10px;
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 900px) {
+                flex-direction: column;
+
+                img{
+                    width: 100%;
+                }
+                .left{
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+
+        }
+
+    }
+}
