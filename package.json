@@ -1,0 +1,28 @@
+{
+  "name": "frontend-mentor-submissions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "repository": "git+https://github.com/kitharvey/frontend-mentor-submissions.git",
+  "keywords": [],
+  "author": "Kit Harvey V. Caubalejo <54163221+kitharvey@users.noreply.github.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kitharvey/frontend-mentor-submissions/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.34",
+    "@types/react": "^17.0.3",
+    "typescript": "^4.2.3"
+  }
+}
