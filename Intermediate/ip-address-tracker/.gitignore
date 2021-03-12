@@ -1,16 +1,15 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-node_modules
+/node_modules
 /.pnp
 .pnp.js
-.vercel
 
 # testing
 /coverage
 
 # production
-build
+/build
 
 # misc
 .DS_Store
@@ -18,24 +17,26 @@ build
 .env.development.local
 .env.test.local
 .env.production.local
+# .env
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Avoid accidental upload of the Sketch and Figma design files
-#####################################################
-## Please do not remove lines 5 and 6 - thanks! 🙂 ##
-#####################################################
+# Avoid accidental Sketch file upload 
+###############################################
+## Please do not remove line 5 - thanks! 🙂 ##
+###############################################
 *.sketch
-*.fig
 
-# Avoid accidental XD upload if you convert the design file
-###############################################
-## Please do not remove line 12 - thanks! 🙂 ##
-###############################################
+# Avoid accidental XD or Figma upload if you convert the design file
+#######################################################
+## Please do not remove lines 11 and 12 - thanks! 🙂 ##
+#######################################################
 *.xd
+*.fig
 
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
-.prettierignore
+
+.vercel

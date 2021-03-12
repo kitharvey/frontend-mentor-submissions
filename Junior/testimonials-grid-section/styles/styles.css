@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px;
+  min-height: 100vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ecf2f8;
+}
+
+.container {
+  max-width: 1080px;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: auto;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 40px 20px;
+  }
+}
+
+.container ul {
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: minmax(250px, 1fr);
+      grid-template-rows: minmax(250px, 1fr);
+  grid-gap: 25px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.container ul .wide {
+  grid-column: span 2 / auto;
+}
+
+.container ul .wide-two {
+  grid-column: span 2 / auto;
+}
+
+.container ul .tall {
+  grid-row: span 2 / auto;
+}
+
+@media screen and (max-width: 1080px) {
+  .container ul {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .container ul .tall {
+    grid-column: span 2 / auto;
+    grid-row: unset;
+  }
+  .container ul .wide-two {
+    grid-column: span 3 / auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container ul {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .container ul .wide {
+    grid-column: unset;
+  }
+  .container ul .tall {
+    grid-row: unset;
+    grid-column: unset;
+  }
+  .container ul .wide-two {
+    grid-column: unset;
+  }
+}
+
+.container ul .card {
+  border-radius: 6px;
+  -webkit-box-shadow: 30px 30px 30px #00000010;
+          box-shadow: 30px 30px 30px #00000010;
+  padding: 25px;
+  min-height: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container ul .card .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container ul .card .top img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.container ul .card .top .name-wrapper .subname {
+  font-size: .75rem;
+  opacity: 50%;
+}
+
+.container ul .card .headline {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.container ul .card blockquote {
+  opacity: 75%;
+  line-height: 1.4;
+}
+
+.container ul .moderate-violet {
+  background-color: #7541c8;
+  color: white;
+  position: relative;
+  z-index: -1;
+}
+
+.container ul .moderate-violet img {
+  border: 2px solid #a775f2;
+}
+
+.container ul .moderate-violet::after {
+  content: '';
+  position: absolute;
+  background: url(/images/bg-pattern-quotation.svg) no-repeat;
+  top: 0;
+  right: 10%;
+  height: 100px;
+  width: 100px;
+  z-index: -1;
+}
+
+.container ul .very-dark-grayish-blue {
+  background-color: #48556a;
+  color: white;
+}
+
+.container ul .very-dark-blackish-blue {
+  background-color: #19212e;
+  color: white;
+}
+
+.container ul .very-dark-blackish-blue img {
+  border: 2px solid #7541c8;
+}
+
+.attribution {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=styles.css.map */
