@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; position: absolute; bottom: 0; }
+.attribution a { color: #000000; font-weight: 700; text-decoration: none; }
+
+.profileCardWrapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Cabin', sans-serif;
+    background-color: #19a1ad;
+
+    &::before, &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100vh;
+        background-size: auto;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+
+    &::before {
+        top: 0;
+        left: 0;
+        background: url("../../public/newbie/profile-card-component/bg-pattern-top.svg") no-repeat bottom right;
+    }
+    
+    &::after {
+        top: 100%;
+        left: 100%;
+        background: url("../../public/newbie/profile-card-component/bg-pattern-bottom.svg") no-repeat top left;
+    }
+
+
+    .card{
+        position: relative;
+        z-index: 2;
+        height: 350px;
+        width: 350px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 20px 50px 0 #00000030;
+        overflow: hidden;
+        display: grid;
+        grid-template-rows: 40% 35% 25%;
+    
+        @media only screen and (max-width: 600px) {
+            width: 100%;
+        }
+    
+        .top{
+            position: relative;
+            background-image: url('../../public/newbie/profile-card-component/bg-pattern-card.svg');
+            img{
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%) translateY(50%);
+                border-radius: 50%;
+                border: 4px solid #ffffff;
+            }
+        }
+        
+        .middle{
+            align-self: end;
+            justify-self: center;
+            text-align: center;
+            padding-bottom: 20px;
+    
+            .name{
+                font-weight: 700;
+                font-size: 1.25rem;
+            }
+            .age, .location{
+                font-weight: 400;
+                color: #727272;
+            }
+        }
+        
+    
+        
+        .bottom{
+            border-top: 1px solid #e7e7e7;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+    
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+    
+            p{
+                font-weight: 700;
+                font-size: 1.25rem;
+                line-height: 1;
+                text-align: center;
+                white-space: pre-line;
+            }
+    
+            .statTitle{
+                color: #727272;
+                font-size: .8rem;
+                font-weight: lighter;
+            }
+        }
+    
+    }
+}
+
+
+
