@@ -1,5 +1,5 @@
 import React from 'react'
-import ProfileCard from '../../../Newbie/profile-card-component/ProfileCard';
+import ProfileCard from '../../../solutions/Newbie/profile-card-component/ProfileCard';
 
 const index: React.FC = ({}) => {
         return (
